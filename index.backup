@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Go to http://fontawesome.io/get-started/ to generate your own embed code! -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riley Tuttle</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- // Intro -->
+  <header id="about" class="default-primary-color">
+    <a href="pdfs/baseResume.pdf" class="btn download accent-color" target="_blank">View my resume</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Professional Experience</a>
+      <a href="#courses">Notable Courses and Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="content-wrap">
+      <img class="profile-img col-narrow" src="images/headshot.jpg" alt="Riley Tuttle">
+      <div class="col-wide">
+        <h1 class="primary-text-color">Riley Tuttle</h1>
+        <h2>Computer Engineer</h2>
+        <p>Hi, I'm Riley.</p>
+        <p>I'm a computer engineer with a passion for solving everyday problems.</p>
+        <p>Professionally my interests are in Consumer Electronics and frequently my personal projects involve embedded systems. In my spare time you'll probably find me playing frisbee or working on my old cars and motorcycles. Check out some of my projects below. Feel free to <a href="#contact">contact</a> me.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- // Work Experience -->
+    <section id="work" class="work light-primary-color">
+      <div class="content-wrap">
+        <h2>Professional Experience</h2>
+
+        <!-- Job 1 Details -->
+        <div class="col-narrow">
+          <h3 class="workh3">Graduate Teaching Assistant</h3>
+          <p class="workp">University of Rhode Island</p>
+          <p class="workp">May 2016 - May 2018</p>
+        </div>
+
+        <div class="col-wide job-description">
+          <p>Developed and proctored lab series for senior level Computer Engineering class Taught students: computer organization levels including designing hardware (in VHDL) for FPGA and interfacing it with system via a device driver; developing software in C for embedded system in Linux environment using cross compilation; and Python coding exercises.
+            <!-- (add link to page about with demo videos. Put demo videos on youtube) -->
+</p>
+        </div>
+
+        <!-- Job 2 Details -->
+        <div class="col-narrow">
+          <h3 class="workh3">Computer Engineering Intern</h3>
+          <p class="workp">IAV, Gifhorn Germany</p>
+          <p class="workp">Feb - Aug 2015</p>
+        </div>
+        <div class="col-wide job-description">
+          <p>Developed analysis tools to visualize automotive sensor data. The tools were used to analyze emissions performance of Audi 6 and 8 cylinder diesel engines. These tools were developed using MATLAB.</p>
+        </div>
+
+        <!-- Job 3 Details -->
+        <div class="col-narrow">
+          <h3 class="workh3">Electrical Engineering Intern</h3>
+          <p class="workp">Sensata Technologies, Attleboro MA</p>
+          <p class="workp">Jun-Aug 2014</p>
+        </div>
+        <div class="col-wide job-description">
+          <p>Developed debugging tools for an automotive pressure sensor. The Arduino interface communicated with the sensor via I2C and with the host computer via USB.
+The GUI portion of the tool was made with MATLAB.</p>
+        </div>
+
+
+        <!-- <p class="github">See my complete work history on <a href="https://www.linkedin.com/in/njohnson2018/" target="_blank">LinkedIn</a>.</p> -->
+      </div>
+    </section>
+
+    <!-- // Course Experience -->
+    <section id="courses" class="course">
+      <div class="content-wrap">
+        <h2>Noteable Courses and Projects</h2>
+
+        <!-- Course 1 Details -->
+        <div class="col-narrow">
+          <h3 class="courseh3">Automated Temperature Sampler</h3>
+          <p>Senior Capstone Project for Eagle Electric Engineering Enterprise (4E)</p>
+          <p>Fall 2015 - Spring 2016</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Team designed and built robot to crawl on inner face of submarine hull and probe hull for temperature. Programmed controller (Arduino Uno) to take sensor inputs and control motor outputs. Included programming of a 12 bit counter chip. In charge of making HMI (Human Machine Interface), an android tablet app. Created protocol overlay on top of SPI for main controller to communicate with the HMI through Wifi shield. For a better description check out <a href="pdfs/capstoneFinalPresentation.pdf" target="_blank">the slides</a> and the <a href="pdfs/AutomatedTemperature SamplerFinalProgressReport.pdf" target="_blank">report</a>. Check out a demo video <a href="https://youtu.be/gMheAgHQov0" target="_blank">here</a>.</p>
+        </div>
+
+        <div class="col-narrow">
+          <h3 class="courseh3">Classification of Written Digits</h3>
+          <p>ELE665 Detection and Modulation</p>
+          <p>Spring 2017</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Used Detection Theory techniques (spefically GLRT) to classify written digits. Click <a href="pdfs/writtenDigitClassificationPresentation.pdf" target="_blank">here</a> to look through a short presentation and <a href = "pdfs/writtenDigitClassificationReport.pdf" target="_blank">here</a> for a paper describing the results. Check out my code <a href="https://github.com/rileytuttle/writtenDigitClassification" target="_blank">here</a>.</p>
+        </div>
+
+        <!-- Course 1 Details -->
+        <!-- <div class="col-narrow">
+          <h3 class="courseh3">Classification of Written Digits</h3>
+          <p>Machine Learning Andrew Ng.</p>
+          <p>Spring 2017</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Used machine learning techniques (logistic regression and neural networks) to classify written digits. Click <a href="pdfs/writtenDigitClassificationPresentation.pdf" download>Here</a> to look through a short presentation and <a href = "pdfs/writtenDigitClassificationReport.pdf" download>Here</a> for a paper describing the results. Check out my code <a href="https://github.com/rileytuttle/writtenDigitClassification">here</a>.</p>
+        </div> -->
+
+        <!-- Course 1 Details -->
+        <div class="col-narrow" id="valuePrediction">
+          <h3 class="courseh3">Value Prediction</h3>
+          <p>ELE548 Computer Architecture</p>
+          <p>Spring 2018</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Implemented a method for predicting processor load values (Vtage) in a simulated processor. Able to predict correctly 8.49% of the
+            time while limiting incorrect predictions to 0.35%. The code and simulated framework were written in C++.
+            Click <a href = "pdfs/valuePredictionReport.pdf" target="_blank">here</a> for a paper describing the results. Check my code out <a href="https://github.com/rileytuttle/valuePrediction" target="_blank">here</a>.</p>
+        </div>
+
+        <!-- Course 1 Details -->
+        <div class="col-narrow"  id="wifiMotion">
+          <h3 class="courseh3">Wifi Based Motion Detection</h3>
+          <p>ELE543 Computer Networks</p>
+          <p>Spring 2018</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Designed and implemented a method for detecting motion between a wifi access point and a wireless device (Raspberry Pi 3) without any hardware modifications. The method used detection theory techniques (a simplified version of energy detection).
+            Click <a href="pdfs/WifiMotionFinalPresentation.pdf" target="_blank">here</a> for a brief presentation of the implementation and click <a href="pdfs/WifiMotionFinalReport.pdf" target="_blank">here</a>
+            for the report.<a href="https://youtu.be/jBbIV_wnMRI">Video demonstration</a>.
+          </p>
+        </div>
+
+        <!-- Course 1 Details -->
+        <!-- <div class="col-narrow">
+          <h3 class="courseh3">Approximate Adder</h3>
+          <p>ELE545 Advanced Digital Circuits and Systems</p>
+          <p>Fall 2016</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Implemented an approximate adder to save on hardware costs for an image processing system. Written in vhdl. Reduced x amount of gates used and allowed for x amount more image processing to be done.
+          </p>
+        </div> -->
+
+        <!-- Course 1 Details -->
+        <div class="col-narrow">
+          <h3 class="courseh3">Karaoke Machine</h3>
+          <p>ELE501 Linear Transform Analysis</p>
+          <p>Fall 2017</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Designed a filter to remove vocals from a single channel song. Written in matlab used signal processing techniques. Click <a href="https://github.com/rileytuttle/karaoke" target="_blank">here</a> to view the code.
+            <!-- Click here for code to remove audio from dual channel audio (much better results). -->
+          </p>
+        </div>
+
+        <!-- Course 1 Details -->
+        <!-- <div class="col-narrow">
+          <h3 class="courseh3">GPS Tracker</h3>
+          <p>ELE408 Computer Organization</p>
+          <p>Spring 2016</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Made a GPS tracker Designed a filter to remove vocals from a single channel song. Written in matlab used signal processing techniques. Click <a href="https://github.com/rileytuttle/karaoke" target="_blank">here</a> to view the code.
+          </p>
+        </div> -->
+
+        <div class="col-narrow" id="keytar">
+          <h3 class="courseh3">Keytar Project</h3>
+          <p>Personal Project</p>
+          <p>Fall 2017</p>
+        </div>
+        <div class="col-wide course-description">
+          <p><a href="https://en.wikipedia.org/wiki/Circuit_bending" target="_blank">Circuit-Bending</a> project to modify an old casio keyboard into a faux keytar. Modifications include: 1/4 in guitar amp jack, feedback loop for "crunchier" sound, and the addition of a variable clock source hooked up to a strip potentiometer to make a slide pitch bender. Video to come soon.
+            <!-- Click here for code to remove audio from dual channel audio (much better results). -->
+          </p>
+        </div>
+
+        <!-- Course 1 Details -->
+        <div class="col-narrow" id="pickHolder">
+          <h3 class="courseh3">Guitar Pick Holder</h3>
+          <p>Personal Project</p>
+          <p>Spring 2018</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Other guitar pick holder designs require sticking an adhesive onto the body of the guitar (see <a href="images/adhesivePickHolder.jpg" target="_blank">image</a>). Instead I designed a 3D modelled snap in fixture to hold guitar picks. See it <a href="https://www.thingiverse.com/thing:2910982" target="_blank">here</a>.
+          </p>
+        </div>
+        <!-- <p class="github col-full">Check out some of my projects on <a href="https://github.com/njohnsoncpe">GitHub</a>.</p> -->
+      </div>
+    </section>
+
+
+    <!-- // Education -->
+    <section id="education" class="education  light-primary-color">
+      <div class="content-wrap">
+        <h2>Education</h2>
+        <!-- School 1 details. -->
+        <h4>Graduate (GPA: 3.63/4) - May 2018</h4>
+        <h3>University of Rhode Island - Kingston, RI</h3>
+        <p>M.S. Electrical Engineering<br />
+        	 Certificate in Embedded Systems<br/><br/>
+         <a href="pdfs/RileyTuttle_Unofficial_Transcript.pdf" target="_blank">View my most recent Transcripts</a>
+       </p>
+
+        <h4>Undergraduate (GPA: 3.79/4) - May 2016</h4>
+        <h3>University of Rhode Island - Kingston, RI</h3>
+        <p>B.S. Computer Engineering<br />
+        	 B.S. Applied Mathematics<br />
+        	 B.A. German
+         </p>
+
+        <h4>URI Internation Engineering Program (IEP) - Sep-Dec 2014</h4>
+        <h3>Technical University of Brunswick, Germany</h3>
+    </section>
+  </main>
+
+
+  <!-- // Footer & contact info -->
+  <footer id="contact" class="accent-color">
+    <div class="content-wrap text-primary-color">
+      <h2>Feel free to contact me.</h2>
+
+      <!-- Social media links. Add or remove any networks. -->
+      <div class="contact-info text-primary-color" align="left">
+        primary email: <a href="mailto:rileytuttle@gmail.com">rileytuttle@gmail.com</a><br/>
+        cell number: <a href="callto:4013235271">401-323-5271</a><br/>
+        other: <a href="https://www.linkedin.com/in/rileytuttle/" target="_blank">LinkedIn</a><br/>
+      </div>
+    </div>
+
+      <!-- <p style="font-weight : 300i; font-style : italic;">made on earth by humans</p> -->
+    <div class="disclaimer text-primary-color">
+      <div class="disclaimer text-primary-color" align="center">
+        Disclaimer: This site is a work in progress so check back soon for updates.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

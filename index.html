@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Go to http://fontawesome.io/get-started/ to generate your own embed code! -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riley Tuttle</title>
@@ -10,13 +8,14 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- // Intro -->
+
   <header id="about" class="default-primary-color">
     <a href="pdfs/baseResume.pdf" class="btn download accent-color" target="_blank">View my resume</a>
     <nav>
       <a href="#about">About</a>
       <a href="#work">Professional Experience</a>
       <a href="#courses">Notable Courses and Projects</a>
+	  <a href="#skills">Skills</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -27,7 +26,10 @@
         <h2>Computer Engineer</h2>
         <p>Hi, I'm Riley.</p>
         <p>I'm a computer engineer with a passion for solving everyday problems.</p>
-        <p>Professionally my interests are in Consumer Electronics and frequently my personal projects involve embedded systems. In my spare time you'll probably find me playing frisbee or working on my old cars and motorcycles. Check out some of my projects below. Feel free to <a href="#contact">contact</a> me.</p>
+        <p>Professionally my interests are in Consumer Electronics and frequently my personal projects involve embedded systems
+	In my spare time you'll probably find me playing frisbee or working on my old cars and motorcycles
+	Check out some of my projects below
+	Feel free to <a href="#contact">contact</a> me.</p>
       </div>
     </div>
   </header>
@@ -37,6 +39,32 @@
     <section id="work" class="work light-primary-color">
       <div class="content-wrap">
         <h2>Professional Experience</h2>
+
+        <!-- Job 1 Details -->
+        <div class="col-narrow">
+          <h3 class="workh3">Embedded Software Engineer</h3>
+          <p class="workp"><a href="https://mayflowercom.com/us/" target="_blank">Mayflower Communications Company</a></p>
+          <p class="workp">Septempber 2018 - present</p>
+        </div>
+
+        <div class="col-wide job-description">
+          <p>Wrote low level drivers for hardware components such as Gyroscope, Accelerometer, Magnetometer, and Barometer
+	Implemented code responsible for reliable GPS receiver positioning in government applications.
+          </p>
+	  <p>Embedded Linux development.
+		I worked on ruggedized handheld radios running embedded linux.
+		I was tasked with working with hardware drivers linux system networking to support different network topology demonstrations.
+	</p>
+          <p>Ran demos to showcase different capabilities of the GPS receivers for high level government officials.
+          </p>
+          <p>Developed a GPS tracking Web Application.
+		This effort supported "field testing";
+		Taking receivers out on the road to test new algorithms and collect data.
+		Previously we needed to post process the collected data to see how close to the truth our new algorithm was.
+		As a side project I developed a web application that plotted the receiver's calculated coordinates on a downloaded map (downloaded maps removed the need for internet access in a car).
+          </p>
+          <img src="images/APeL_tracker.gif">
+        </div>
 
         <!-- Job 1 Details -->
         <div class="col-narrow">
@@ -58,7 +86,9 @@
           <p class="workp">Feb - Aug 2015</p>
         </div>
         <div class="col-wide job-description">
-          <p>Developed analysis tools to visualize automotive sensor data. The tools were used to analyze emissions performance of Audi 6 and 8 cylinder diesel engines. These tools were developed using MATLAB.</p>
+          <p>Developed analysis tools to visualize automotive sensor data
+	The tools were used to analyze emissions performance of Audi 6 and 8 cylinder diesel engines
+	These tools were developed using MATLAB.</p>
         </div>
 
         <!-- Job 3 Details -->
@@ -68,7 +98,8 @@
           <p class="workp">Jun-Aug 2014</p>
         </div>
         <div class="col-wide job-description">
-          <p>Developed debugging tools for an automotive pressure sensor. The Arduino interface communicated with the sensor via I2C and with the host computer via USB.
+          <p>Developed debugging tools for an automotive pressure sensor
+	The Arduino interface communicated with the sensor via I2C and with the host computer via USB.
 The GUI portion of the tool was made with MATLAB.</p>
         </div>
 
@@ -82,6 +113,43 @@ The GUI portion of the tool was made with MATLAB.</p>
       <div class="content-wrap">
         <h2>Noteable Courses and Projects</h2>
 
+
+        <!-- Course 1 Details -->
+        <div class="col-narrow">
+          <h3 class="courseh3">Smart Thermostat</h3>
+          <p>Personal Project</p>
+          <p>Fall 2018</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>Utilized a raspberry pi and temperature sensor to make my own smart thermostat
+	It installs on top of the current thermostat
+	So the original thermostat is still 100% functional (good for apartment living where I don't want to make any permanent changes)
+	It also connects to Apples homekit so Siri can control it.
+Update: I have set up more of a hub and node architecture in the hopes of reducing the power and running on battery someday
+	Now the temp sensor is attached to NodeMCU while the raspberry pi can be remote to the houses thermostat.
+          </p>
+          <img height="400" width="300" src="images/thermostat.jpg">
+        </div>
+
+        <!-- Course 1 Details -->
+        <div class="col-narrow">
+          <h3 class="courseh3">One handed typing application</h3>
+          <p>Personal Project</p>
+          <p>Fall 2018</p>
+        </div>
+        <div class="col-wide course-description">
+          <p>This project requires a bit of background.
+		In short typing with one hand on a keyboard can be achieved by utilizing the muscle memory of the other hand
+	see <a href="https://en.wikipedia.org/wiki/One_hand_typing#Mirrored_keyboard" target="_blank">here</a> for more details
+	Most implementations require some modifier key to tell the program that the typist wants to type a key from the other side.
+	I envisioned and implemented a version that guesses possible words based on all the possible combinations of letters cross referenced with a dictionary.
+	I believe this version is much more natural.
+	Right now it only works in Windows because the predictive text program I leveraged from only works on Windows.</p>
+<video height="450" width="800" muted loop autoplay align="right">
+<source src="videos/typing.MOV" type="video/mp4">
+</video>
+        </div>
+
         <!-- Course 1 Details -->
         <div class="col-narrow">
           <h3 class="courseh3">Automated Temperature Sampler</h3>
@@ -89,7 +157,13 @@ The GUI portion of the tool was made with MATLAB.</p>
           <p>Fall 2015 - Spring 2016</p>
         </div>
         <div class="col-wide course-description">
-          <p>Team designed and built robot to crawl on inner face of submarine hull and probe hull for temperature. Programmed controller (Arduino Uno) to take sensor inputs and control motor outputs. Included programming of a 12 bit counter chip. In charge of making HMI (Human Machine Interface), an android tablet app. Created protocol overlay on top of SPI for main controller to communicate with the HMI through Wifi shield. For a better description check out <a href="pdfs/capstoneFinalPresentation.pdf" target="_blank">the slides</a> and the <a href="pdfs/AutomatedTemperature SamplerFinalProgressReport.pdf" target="_blank">report</a>. Check out a demo video <a href="https://youtu.be/gMheAgHQov0" target="_blank">here</a>.</p>
+          <p>Team designed and built robot to crawl on inner face of submarine hull and probe hull for temperature
+	Programmed controller (Arduino Uno) to take sensor inputs and control motor outputs
+	Included programming of a 12 bit counter chip
+	In charge of making HMI (Human Machine Interface), an android tablet app
+	Created protocol overlay on top of SPI for main controller to communicate with the HMI through Wifi shield
+	For a better description check out <a href="pdfs/capstoneFinalPresentation.pdf" target="_blank">the slides</a> and the <a href="pdfs/AutomatedTemperature SamplerFinalProgressReport.pdf" target="_blank">report</a>
+	Check out a demo video <a href="https://youtu.be/gMheAgHQov0" target="_blank">here</a>.</p>
         </div>
 
         <div class="col-narrow">
@@ -98,7 +172,9 @@ The GUI portion of the tool was made with MATLAB.</p>
           <p>Spring 2017</p>
         </div>
         <div class="col-wide course-description">
-          <p>Used Detection Theory techniques (spefically GLRT) to classify written digits. Click <a href="pdfs/writtenDigitClassificationPresentation.pdf" target="_blank">here</a> to look through a short presentation and <a href = "pdfs/writtenDigitClassificationReport.pdf" target="_blank">here</a> for a paper describing the results. Check out my code <a href="https://github.com/rileytuttle/writtenDigitClassification" target="_blank">here</a>.</p>
+          <p>Used Detection Theory techniques (spefically GLRT) to classify written digits
+	Click <a href="pdfs/writtenDigitClassificationPresentation.pdf" target="_blank">here</a> to look through a short presentation and <a href = "pdfs/writtenDigitClassificationReport.pdf" target="_blank">here</a> for a paper describing the results
+	Check out my code <a href="https://github.com/rileytuttle/writtenDigitClassification" target="_blank">here</a>.</p>
         </div>
 
         <!-- Course 1 Details -->
@@ -118,9 +194,12 @@ The GUI portion of the tool was made with MATLAB.</p>
           <p>Spring 2018</p>
         </div>
         <div class="col-wide course-description">
-          <p>Implemented a method for predicting processor load values (Vtage) in a simulated processor. Able to predict correctly 8.49% of the
-            time while limiting incorrect predictions to 0.35%. The code and simulated framework were written in C++.
-            Click <a href = "pdfs/valuePredictionReport.pdf" target="_blank">here</a> for a paper describing the results. Check my code out <a href="https://github.com/rileytuttle/valuePrediction" target="_blank">here</a>.</p>
+          <p>Implemented a method for predicting processor load values (Vtage) in a simulated processor
+	Able to predict correctly 8.49% of the
+            time while limiting incorrect predictions to 0.35%
+	The code and simulated framework were written in C++.
+            Click <a href = "pdfs/valuePredictionReport.pdf" target="_blank">here</a> for a paper describing the results
+	Check my code out <a href="https://github.com/rileytuttle/valuePrediction" target="_blank">here</a>.</p>
         </div>
 
         <!-- Course 1 Details -->
@@ -130,7 +209,8 @@ The GUI portion of the tool was made with MATLAB.</p>
           <p>Spring 2018</p>
         </div>
         <div class="col-wide course-description">
-          <p>Designed and implemented a method for detecting motion between a wifi access point and a wireless device (Raspberry Pi 3) without any hardware modifications. The method used detection theory techniques (a simplified version of energy detection).
+          <p>Designed and implemented a method for detecting motion between a wifi access point and a wireless device (Raspberry Pi 3) without any hardware modifications
+	The method used detection theory techniques (a simplified version of energy detection).
             Click <a href="pdfs/WifiMotionFinalPresentation.pdf" target="_blank">here</a> for a brief presentation of the implementation and click <a href="pdfs/WifiMotionFinalReport.pdf" target="_blank">here</a>
             for the report.<a href="https://youtu.be/jBbIV_wnMRI">Video demonstration</a>.
           </p>
@@ -154,7 +234,9 @@ The GUI portion of the tool was made with MATLAB.</p>
           <p>Fall 2017</p>
         </div>
         <div class="col-wide course-description">
-          <p>Designed a filter to remove vocals from a single channel song. Written in matlab used signal processing techniques. Click <a href="https://github.com/rileytuttle/karaoke" target="_blank">here</a> to view the code.
+          <p>Designed a filter to remove vocals from a single channel song
+	Written in matlab used signal processing techniques
+	Click <a href="https://github.com/rileytuttle/karaoke" target="_blank">here</a> to view the code.
             <!-- Click here for code to remove audio from dual channel audio (much better results). -->
           </p>
         </div>
@@ -176,7 +258,9 @@ The GUI portion of the tool was made with MATLAB.</p>
           <p>Fall 2017</p>
         </div>
         <div class="col-wide course-description">
-          <p><a href="https://en.wikipedia.org/wiki/Circuit_bending" target="_blank">Circuit-Bending</a> project to modify an old casio keyboard into a faux keytar. Modifications include: 1/4 in guitar amp jack, feedback loop for "crunchier" sound, and the addition of a variable clock source hooked up to a strip potentiometer to make a slide pitch bender. Video to come soon.
+          <p><a href="https://en.wikipedia.org/wiki/Circuit_bending" target="_blank">Circuit-Bending</a> project to modify an old casio keyboard into a faux keytar
+	Modifications include: 1/4 in guitar amp jack, feedback loop for "crunchier" sound, and the addition of a variable clock source hooked up to a strip potentiometer to make a slide pitch bender
+	Video to come soon.
             <!-- Click here for code to remove audio from dual channel audio (much better results). -->
           </p>
         </div>
@@ -188,14 +272,36 @@ The GUI portion of the tool was made with MATLAB.</p>
           <p>Spring 2018</p>
         </div>
         <div class="col-wide course-description">
-          <p>Other guitar pick holder designs require sticking an adhesive onto the body of the guitar (see <a href="images/adhesivePickHolder.jpg" target="_blank">image</a>). Instead I designed a 3D modelled snap in fixture to hold guitar picks. See it <a href="https://www.thingiverse.com/thing:2910982" target="_blank">here</a>.
+          <p>Other guitar pick holder designs require sticking an adhesive onto the body of the guitar (see <a href="images/adhesivePickHolder.jpg" target="_blank">image</a>)
+	Instead I designed a 3D modelled snap in fixture to hold guitar picks
+	See it <a href="https://www.thingiverse.com/thing:2910982" target="_blank">here</a>.
           </p>
         </div>
         <!-- <p class="github col-full">Check out some of my projects on <a href="https://github.com/njohnsoncpe">GitHub</a>.</p> -->
       </div>
     </section>
-
-
+	<!-- // Skills -->
+	<section id="skills" class="skills light-primary-color">
+		<div class="content-wrap">
+			<h2>Skills</h2>
+			<ul>
+				<li><h3>Assembly (mostly arm)</h3></li>
+				<li><h3>C/C++</h3></li>
+				<ul><li>most of my work is done bare bones C</li></ul>
+				<li><h3>Java</h3></li>
+				<ul>I don't do much in java anymore but I learned to code in Java so it holds a special place in my heart</li></ul>
+				<li><h3>Bash scripting</h3></li>
+				<ul><li>I find it incredibly rewarding to successfully automate a task using a script. And I work with linux systems enough for it to be very time-saving.</li></ul>
+				<li><h3>Matlab</h3></li>
+				<ul></li>In grad school I ran many simulations and I would usually design them in Matlab first to make sure they worked before porting them to C or C++</li></ul>
+				<li><h3>Python</h3></li>
+				<ul><li>to a lesser extent I have used python for task automation</li></ul>
+				<li><h3>HTML/javascript</h3></li>
+				<ul><li>I know enough HTML/javascript to maintain this webpage and implement my GPS tracking application</li></ul>
+			</ul> 
+		
+		</div>
+	</section
     <!-- // Education -->
     <section id="education" class="education  light-primary-color">
       <div class="content-wrap">
@@ -215,7 +321,7 @@ The GUI portion of the tool was made with MATLAB.</p>
         	 B.A. German
          </p>
 
-        <h4>URI Internation Engineering Program (IEP) - Sep-Dec 2014</h4>
+        <h4>URI International Engineering Program (IEP) - Sep-Dec 2014</h4>
         <h3>Technical University of Brunswick, Germany</h3>
     </section>
   </main>
